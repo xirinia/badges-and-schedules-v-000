@@ -14,7 +14,11 @@ end
 
 def assign_rooms(attendees)
   rooms = []
-  attendees.each do |assigments|
-    rooms.push("Hello, #{attendees}! You'll be assigned to room " + attendees.index + "!")
+  attendees.each_with_index do |assigments|
+    rooms.push("Hello, #{attendees}! You'll be assigned to room #{i}")
   end
+end
+
+def printer
+  puts ""
 end
